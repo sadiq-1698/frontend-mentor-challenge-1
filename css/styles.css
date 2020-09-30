@@ -1,0 +1,340 @@
+:root {
+    --primary: hsl(300, 43%, 22%);
+    --pink: hsl(333, 80%, 67%);
+    --dark-gray: hsl(303, 10%, 53%);
+    --light-gray: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+body img.top {
+    position: absolute;
+}
+
+body img.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 40;
+}
+
+body img.top-mob {
+    display: none;
+}
+
+body img.bottom-mob {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-wrapper {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-section {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.top-section .top-section-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section .header h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    line-height: 100%;
+}
+
+.top-section .top-section-left .header-para p {
+    margin-top: 0.7rem;
+    font-size: 12px;
+    color: var(--dark-gray);
+    line-height: 150%;
+}
+
+.top-section .top-section-left {
+    flex: 1;
+}
+
+.top-section .top-section-right .ratings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-section .top-section-right .ratings-container .ratings {
+    height: auto;
+    background-color: var(--light-gray);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.top-section .top-section-right .ratings-container .ratings.one {
+    position: relative;
+    right: 50px;
+}
+
+.top-section .top-section-right .ratings-container .ratings.two {
+    position: relative;
+    right: 25px;
+}
+
+.top-section .top-section-right .ratings-container .ratings span {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--primary);
+    padding: 0.4rem;
+    padding-right: 4rem;
+}
+
+.top-section .top-section-right .ratings-container .ratings span.checked {
+    color: orange;
+    padding: 0.4rem 2px;
+}
+
+.top-section .top-section-right .ratings-container .ratings span.checked:last-child {
+    color: orange;
+    padding-right: 1rem;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-section .customer-review-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    border-radius: 7px;
+    padding: 1rem;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.bottom-section .customer-review-card.one {
+    position: relative;
+    bottom: 20px;
+}
+
+.bottom-section .customer-review-card.two {
+    position: relative;
+    bottom: 10px;
+}
+
+.bottom-section .customer-review-card .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.bottom-section .customer-review-card .profile img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.bottom-section .customer-review-card .profile .name-and-status {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-section .customer-review-card .profile .name-and-status .name {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.bottom-section .customer-review-card .profile .name-and-status .customer-status {
+    font-size: 15px;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.bottom-section .customer-review-card .profile-review {
+    height: 80px;
+}
+
+.bottom-section .customer-review-card .profile-review p {
+    font-size: 12px;
+    color: var(--white);
+}
+
+.attribution {
+    clear: both;
+    position: relative;
+    height: 25px;
+    margin-top: -25px;
+    font-size : 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width : 950px){
+    .container-wrapper {
+        width: 850px;
+    }
+
+    .bottom-section .customer-review-card {
+        max-width: 220px;
+        max-height: 220px;
+    }
+}
+
+@media screen and (max-width : 880px){
+    body {
+        font-family: 'Poppins', sans-serif;
+        height: 100%;
+    }
+    body img.top {
+        display: none;
+    }
+    
+    body img.bottom {
+        display: none;
+    }
+    body img.top-mob {
+        display: block;
+        position: absolute;
+    }
+    
+    body img.bottom-mob {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 40;
+    }
+    .container{
+        width : 100%;
+    }
+    .container-wrapper{
+        width : 80%;
+        margin : 2rem;
+    }
+    .top-section{
+        margin-top : 1rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .top-section .top-section-left{
+        margin-bottom : 2rem;
+    }
+    .top-section .header h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .top-section .top-section-left .header-para p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .top-section .top-section-right{
+        width : 100%;
+    }
+    .top-section .top-section-right .ratings-container{
+        width : 100%;
+    }
+    .top-section .top-section-right .ratings-container .ratings{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-section .top-section-right .ratings-container .ratings span{
+        text-align: center;
+        padding : 0 0 13px 0;
+        font-size: 15px;
+    }
+    .top-section .top-section-right .ratings-container .ratings.one{
+        padding : 10px 0 0 0;
+        position: relative;
+        right: 0px;
+    }
+    .top-section .top-section-right .ratings-container .ratings.two{
+        padding : 10px 0 0 0;
+        position: relative;
+        right: 0px;
+    }
+    .top-section .top-section-right .ratings-container .ratings.two{
+        padding : 10px 0 0 0;
+    }
+
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .bottom-section .customer-review-card {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .bottom-section .customer-review-card .profile-review {
+        height: 50px;
+    }
+
+    .attribution {
+        clear: both;
+        position: relative;
+        height: 25px;
+        margin-top: -25px;
+        font-size : 10px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width : 600px){
+    .top-section .top-section-left .header-para p {
+        font-size: 15px;
+    }
+    .top-section .top-section-left .header-para p br{
+        display: none;
+    }
+    .bottom-section .customer-review-card .profile-review {
+        height: 80px;
+    }   
+}
+
+@media screen and (max-width : 425px){
+    .top-section .top-section-left .header h1 {
+        display: 2rem;
+    }   
+    .top-section .top-section-left .header h1 br {
+        display: none;
+    }
+}
