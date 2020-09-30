@@ -306,16 +306,6 @@ body img.bottom-mob {
     .bottom-section .customer-review-card .profile-review {
         height: 50px;
     }
-
-    .attribution {
-        clear: both;
-        position: relative;
-        height: 25px;
-        margin-top: -25px;
-        font-size : 10px;
-        text-align: center;
-    }
-
 }
 
 @media screen and (max-width : 600px){
